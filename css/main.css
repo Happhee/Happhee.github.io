@@ -62,9 +62,26 @@ header > img {
   font-size: 20px;
 }
 
+/* 개인 정보  */
+.contact_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+
+  margin-top: 2em;
+}
+
+.contact_list > li {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  font-family: "SOYOMapleBoldTTF";
+}
+
 .desc_profile {
   line-height: 1.4;
 }
+
 .desc_root_wrapper {
   margin-bottom: 20px;
 }
@@ -220,6 +237,9 @@ article {
 ul {
   margin: 0;
   padding-left: 1.4em;
+}
+ul.contact_list {
+  padding-left: 0;
 }
 
 /* 기술 */
