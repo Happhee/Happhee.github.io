@@ -1,0 +1,34 @@
+.desc_title_wrapper {
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 30%;
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.desc_title_wrapper h2 {
+  width: fit-content;
+  padding: 0.3em 1em;
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
+  box-shadow: 0 2px 25px rgba(231, 129, 162, 0.5);
+  border-radius: 0.5em;
+}
+
+.desc_section_wrapper h3 {
+  position: relative;
+}
+
+.desc_section_wrapper h3 span {
+  display: inline;
+  background-image: linear-gradient(
+    to right,
+    rgb(131, 61, 185),
+    rgb(252, 92, 183)
+  );
+  background-size: 100% 15%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
