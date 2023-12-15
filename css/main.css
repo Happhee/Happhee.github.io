@@ -243,14 +243,45 @@ mark {
   box-shadow: 0 2px 16px rgba(225, 161, 181, 0.5);
 }
 
-.university_list {
+.desc_section_activity__detail {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-.university_list > li > p:nth-child(2) {
-  /* color: #503654; */
+.desc_section_activity__detail p:nth-child(2) {
   font-family: "SOYOMapleBoldTTF";
-  /* text-shadow: 5px 5px #d3ccd4; */
-  /* margin: 0; */
+}
+
+@media screen and (max-width: 740px) {
+  html {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  .profile-article {
+    font-size: 18px;
+  }
+
+  .desc_section_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .tech_stack {
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+  h2 + div > div > div:first-of-type {
+    position: relative;
+    align-self: flex-start;
+    top: 0;
+  }
+  .overlay {
+    padding: 0.5rem;
+  }
+}
+
+.print {
+  display: none;
 }
