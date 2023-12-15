@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "SOYOMapleBoldTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KCC-Ganpan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --accent: #5e63aa;
+  --background: #fcfcfc;
+  --color: #1e2027;
+  --time-color: rgb(51, 51, 51);
+  font-family: "NanumSquareRound";
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "SOYOMapleBoldTTF";
+}
+
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+
+  height: 300px;
+  line-height: 1.2;
+}
+
+header > img {
+  border-radius: 20%;
+  filter: drop-shadow(5px 5px 5px hsl(280, 43%, 84%));
+}
+
+.profile-article {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  font-size: 20px;
+}
+
+.desc_profile {
+  line-height: 1.4;
+}
+.desc_root_wrapper {
+  margin-bottom: 20px;
+}
+.desc_root_wrapper > h2 {
+  font-family: "KCC-Ganpan";
+  color: #5e63aa;
+  font-size: 3em;
+}
+.desc_section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  margin-bottom: 50px;
+}
+.desc_section_wrapper section:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+li {
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+.link_wrapper {
+  position: relative;
+  font-size: 1em;
+}
+.link_wrapper > a {
+  margin-left: 1.3em;
+}
+a {
+  color: #5e63aa;
+  text-decoration: none;
+}
+.link_wrapper::after {
+  position: absolute;
+  left: 0em;
+  height: 0.3em;
+  content: "🔗";
+  font-size: 1em;
+  text-align: center;
+  border-radius: 50%;
+}
+/* 세부내용 */
+.desc_section_activity {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.desc_section_activity h4 {
+  color: #8f6894;
+  text-shadow: 5px 5px #d3ccd4;
+  margin: 0;
+}
+.desc_section_activity > p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+.desc_section_activity article {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.desc_section_activity article > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.desc_section_activity article > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+
+  padding: 0.3em;
+}
+/* 프로젝트 별 상세 */
+.des-title {
+  font-size: 20px;
+  font-family: "SOYOMapleBoldTTF";
+
+  color: #5b425f;
+  text-shadow: 3px 3px #d3ccd4;
+}
+.des_dot_wrapper {
+  position: relative;
+}
+.des-title::before,
+.des_dot_wrapper > p::before {
+  position: absolute;
+  left: -0.5em;
+  top: 0.6em;
+  height: 0.3em;
+  width: 0.3em;
+  content: " ";
+  font-size: 1em;
+  text-align: center;
+  border-radius: 50%;
+  background: #49116e;
+}
+.des_content {
+  line-height: 1.2;
+}
+
+body {
+  background-color: #f5f5bb;
+}
+
+.purple {
+  color: #9214e6;
+}
+
+time,
+em {
+  font-style: italic;
+  color: var(--time-color);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1.2em 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 1.4em 0 1em;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin: 0 0 0.4em;
+}
+
+h4 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  margin: 1rem 0 0.2em;
+}
+p {
+  margin: 0;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+/* 기술 */
+h5 {
+  color: #786894;
+  text-shadow: 5px 5px #d3ccd4;
+  margin: 0;
+}
+.tech_stack {
+  display: flex;
+  gap: 0.5em;
+}
+mark {
+  color: white;
+  background-color: #cdaed1;
+  padding: 0.4em;
+
+  border-radius: 10em;
+  font-size: 15px;
+
+  box-shadow: 0 2px 16px rgba(225, 161, 181, 0.5);
+}
+
+.university_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.university_list > li > p:nth-child(2) {
+  /* color: #503654; */
+  font-family: "SOYOMapleBoldTTF";
+  /* text-shadow: 5px 5px #d3ccd4; */
+  /* margin: 0; */
+}
