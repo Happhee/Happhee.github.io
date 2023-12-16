@@ -54,6 +54,10 @@ header > img {
   filter: drop-shadow(5px 5px 5px hsl(280, 43%, 84%));
 }
 
+.main_title {
+  text-shadow: 4px 4px #d3ccd4;
+}
+
 .profile-article {
   display: flex;
   flex-direction: column;
