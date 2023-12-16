@@ -171,6 +171,12 @@ a {
 .des_dot_wrapper {
   position: relative;
 }
+.des_dot_wrapper p {
+  line-height: 1.4;
+}
+.des_dot_wrapper strong {
+  font-family: "SOYOMapleBoldTTF";
+}
 .des-title::before,
 .des_dot_wrapper > p::before {
   position: absolute;
