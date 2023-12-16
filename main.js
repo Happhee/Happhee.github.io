@@ -8,16 +8,13 @@ const main_title = $(".main_title");
 let idx = 0;
 
 const typing = () => {
-  let main_title_txt = MAIN_TITLE[idx++];
-  main_title.innerHTML +=
-    (main_title_txt === "\n" && "<br/>") ||
-    (PURPLE_CONTETN.includes(main_title_txt) &&
-      `<span class='purple'>${main_title_txt}<span>`) ||
-    main_title_txt;
-
-  if (idx > MAIN_TITLE.length) {
-    main_title.textContent = "";
-    idx = 0;
+  if (idx < MAIN_TITLE.length) {
+    let main_title_txt = MAIN_TITLE[idx++];
+    main_title.innerHTML +=
+      (main_title_txt === "\n" && "<br/>") ||
+      (PURPLE_CONTETN.includes(main_title_txt) &&
+        `<span class='purple'>${main_title_txt}<span>`) ||
+      main_title_txt;
   }
 };
 setInterval(typing, 200);
