@@ -282,6 +282,15 @@ mark {
   font-family: "SOYOMapleBoldTTF";
 }
 
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  font-style: italic;
+
+  margin: 4em;
+  font-size: 0.4em;
+}
+
 @media screen and (max-width: 740px) {
   html {
     font-size: 14px;
